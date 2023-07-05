@@ -1,0 +1,108 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.logo-section {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.link-section {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+}
+
+.link-section.open {
+  display: flex;
+}
+
+.link-section li {
+  margin-bottom: 10px;
+}
+
+.link-section a {
+  text-decoration: none;
+  color: #333;
+}
+
+.link-section a:hover {
+  color: #555;
+}
+
+.link-section a.active {
+  font-weight: bold;
+}
+
+.login-section {
+  font-weight: bold;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+.menu-icon {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon:before,
+.menu-icon:after {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon:before {
+  top: -6px;
+}
+
+.menu-icon:after {
+  top: 6px;
+}
+
+.menu-button.open .menu-icon {
+  transform: rotate(45deg);
+}
+
+.menu-button.open .menu-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.menu-button.open .menu-icon:after {
+  transform: scaleX(0);
+  top: 0;
+}
+@media (max-width: 768px) {
+  .btn-section{
+    display: none;
+  }
+}
+/* Media Query for Desktop Devices */
+@media (min-width: 768px) {
+  .link-section {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .menu-button {
+    display: none;
+  }
+}
