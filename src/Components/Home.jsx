@@ -18,23 +18,32 @@ const Home = () => {
           <ul className="navbar-list">
             <li>
               <a className="navbar-link" href="">
-                Home
-              </a>
-            </li>
-            <li>
-              <a className="navbar-link" href="">
-                About
-              </a>
-            </li>
-            <li>
-              <a className="navbar-link" href="">
-                Contact
+                How to start
               </a>
             </li>
             <li>
               <a className="navbar-link" href="">
                 Services
               </a>
+            </li>
+            <li>
+              <a className="navbar-link" href="">
+                Technologies
+              </a>
+            </li>
+            <li>
+              <a className="navbar-link" href="">
+                Careers
+              </a>
+            </li>
+            <li>
+                <div className="btn-size">
+                  <button className="navbar-button">
+                  <a className="navbar-link btn-text">
+                    Build a team
+                  </a>
+                  </button>
+                </div>
             </li>
           </ul>
         </nav>
